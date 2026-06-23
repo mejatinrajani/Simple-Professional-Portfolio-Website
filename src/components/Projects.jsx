@@ -7,37 +7,34 @@ const Projects = () => {
       title: "MHPCD",
       description: "Constructed an AI-powered moderation system for context-aware detection of predatory and abusive behavior in Indian social media conversations. Architected a multimodal fusion pipeline utilizing SigLIP and BGE-M3 encoders with cross-modal attention to analyze images and Hinglish comments simultaneously, supported by a robust backend for processing complex inputs.",
       tech: ["PyTorch", "Transformers", "FastAPI", "Computer Vision", "NLP"],
-      liveLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/mejatinrajani/Aegis.git"
     },
     {
       id: "02",
       title: "NexusMind",
       description: "Architected a multi-tenant, no-code platform for building custom Hybrid RAG agents, allowing users to define agent personas, system prompts, and knowledge sources. Designed a multimodal ingestion system that transforms any unstructured data into searchable graph and vector knowledge bases. Implemented LangGraph-based agent orchestration with intelligent retrieval routing, fault-tolerant model fallbacks, and real-time monitoring capabilities.",
       tech: ["Python", "FastAPI", "React", "LangGraph", "Neo4j", "ChromaDB", "AWS Textract"],
-      liveLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/mejatinrajani/NexusMind.git"
     },
     {
       id: "03",
       title: "Chronexis",
       description: "Orchestrated an automated, large-scale timetable generation system supporting 5000+ slots to create conflict-free schedules with balanced workloads and efficient class allocation. Integrated features for drag-and-drop editing, add/delete class flexibility, real-time conflict detection, Excel import/export, and enabled multi-perspective timetable views for students, teachers, and rooms with reverse scheduling and history tracking.",
       tech: ["Google OR-Tools", "FastAPI", "React", "TypeScript", "Excel"],
-      liveLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/mejatinrajani/Chronexis--Automated-Time-Table-Generator.git"
     },
     {
       id: "04",
       title: "Astika",
       description: "Engineered a full-stack Vedic astrology platform featuring 50+ deterministic engines for high-precision, location-based calculations across rashi, nakshatra, transits, dosha and yoga detection, dasha timelines, guna milan, and divisional charts. Delivered structured insights and daily predictions across career, health, personality & relationships. Integrated an intent-aware chatbot for natural language query handling backed by strict rule-based accuracy.",
       tech: ["Python", "FastAPI", "React", "Swiss Ephemeris"],
-      liveLink: "#",
-      githubLink: "#"
+      liveLink: "https://www.astika.tech/",
+      githubLink: "https://github.com/mejatinrajani/Astika.git"
     }
   ];
 
   return (
-    <section className="relative w-full bg-[#f4f7f9] py-24 px-6 lg:px-16 font-sans text-slate-800 overflow-hidden min-h-screen">
+    <section id='projects' className="relative w-full bg-[#f4f7f9] py-24 px-6 lg:px-16 font-sans text-slate-800 overflow-hidden min-h-screen">
       
       {/* Increased max-width slightly to accommodate the vertical text nicely */}
       <div className="max-w-[1400px] mx-auto w-full relative z-10 flex flex-col">
@@ -114,6 +111,7 @@ const Projects = () => {
                   <div className="flex flex-wrap items-center gap-8 mt-auto">
                     
                     {/* Custom SVG View Live Button */}
+                    {project.liveLink && (
                     <a 
                       href={project.liveLink}
                       target="_blank"
@@ -131,6 +129,7 @@ const Projects = () => {
                         <polyline points="7 7 17 7 17 17"></polyline>
                       </svg>
                     </a>
+                    )}
                     
                     {/* Custom SVG GitHub Button */}
                     <a 

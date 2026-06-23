@@ -165,7 +165,7 @@ const SkillsGrid = () => {
     : skillsData.filter(skill => skill.category === activeTab);
 
   return (
-    <section className="relative w-full bg-[#f8fafc] py-20 px-6 lg:px-12 font-sans selection:bg-slate-800 selection:text-white">
+    <section id='skills' className="relative w-full bg-[#f8fafc] py-20 px-6 lg:px-12 font-sans selection:bg-slate-800 selection:text-white">
       
       {/* --- HEADER SECTION --- */}
       <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 relative">

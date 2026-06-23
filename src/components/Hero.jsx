@@ -15,8 +15,14 @@ const LeetCodeIcon = () => (
 );
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   return (
-    <div 
+    <div id='home'
       className="relative min-h-screen overflow-hidden flex flex-col font-sans text-slate-800 selection:bg-slate-800 selection:text-white"
       style={{
         backgroundColor: '#f8fafc',
@@ -39,12 +45,10 @@ const Hero = () => {
           {/* <LogoIcon /> */}
         </div>
         <ul className="hidden lg:flex items-center gap-12 text-lg font-medium text-slate-600">
-          <li className="text-slate-900 border-b-2 border-slate-900 pb-1 cursor-pointer">Home</li>
-          <li className="hover:text-slate-900 cursor-pointer transition-colors">About</li>
-          <li className="hover:text-slate-900 cursor-pointer transition-colors">Stats</li>
-          <li className="hover:text-slate-900 cursor-pointer transition-colors">Utilities</li>
-          <li className="hover:text-slate-900 cursor-pointer transition-colors">Blogs</li>
-          <li className="hover:text-slate-900 cursor-pointer transition-colors">Projects</li>
+          <li onClick={() => scrollToSection('home')} className="text-slate-900 border-b-2 border-slate-900 pb-1 cursor-pointer">Home</li>
+          <li onClick={() => scrollToSection('skills')} className="hover:text-slate-900 cursor-pointer transition-colors">Skills</li>
+          <li onClick={() => scrollToSection('projects')} className="hover:text-slate-900 cursor-pointer transition-colors">Projects</li>
+          <li onClick={() => scrollToSection('contact')} className="hover:text-slate-900 cursor-pointer transition-colors">Contact</li>
         </ul>
         <button className="p-2 hover:bg-slate-200 rounded-full transition-colors">
           {/* <Sun size={20} className="text-slate-700" /> */}
@@ -91,11 +95,11 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 lg:gap-4 mt-2 z-10 w-full sm:w-auto">
-              <button className="flex items-center justify-center z-10 gap-3 lg:gap-4 bg-[#0f172a] text-white px-6 py-4 lg:px-8 lg:py-5 rounded-sm text-lg lg:text-2xl font-semibold hover:bg-slate-800 transition-colors shadow-sm w-full sm:w-auto">
+              <a href="/Jatin-Rajani-Resume.pdf" target='_blank' rel="noopener noreferrer" className="flex items-center justify-center z-10 gap-3 lg:gap-4 bg-[#0f172a] text-white px-6 py-4 lg:px-8 lg:py-5 rounded-sm text-lg lg:text-2xl font-semibold hover:bg-slate-800 transition-colors shadow-sm w-full sm:w-auto">
                 <Download size={20} className="w-5 h-5 lg:w-6 lg:h-6" />
                 Download Resume
-              </button>
-              <button className="flex items-center justify-center gap-3 lg:gap-4 bg-transparent border border-slate-400 text-slate-700 px-6 py-4 lg:px-8 lg:py-5 rounded-sm text-lg lg:text-2xl font-semibold hover:bg-slate-100 transition-colors w-full sm:w-auto">
+              </a>
+              <button onClick={() => scrollToSection('contact')} className="flex items-center justify-center gap-3 lg:gap-4 bg-transparent border border-slate-400 text-slate-700 px-6 py-4 lg:px-8 lg:py-5 rounded-sm text-lg lg:text-2xl font-semibold hover:bg-slate-100 transition-colors w-full sm:w-auto">
                 Get in Touch
                 <ArrowRight size={20} className="w-5 h-5 lg:w-6 lg:h-6" />
               </button>
@@ -108,13 +112,13 @@ const Hero = () => {
               </span>
               <div className="hidden sm:block h-4 w-px bg-slate-300 mx-2"></div>
               <div className="flex gap-3 lg:gap-4">
-                <a href="#" className="p-4 lg:p-6 border border-slate-200 bg-white rounded-sm text-slate-600 hover:text-[#0f172a] transition-colors shadow-sm">
+                <a href="https://leetcode.com/u/mejatinrajani/" className="p-4 lg:p-6 border border-slate-200 bg-white rounded-sm text-slate-600 hover:text-[#0f172a] transition-colors shadow-sm">
                   <LeetCodeIcon />
                 </a>
-                <a href="#" className="p-4 lg:p-6 border border-slate-200 bg-white rounded-sm text-slate-600 hover:text-[#0f172a] transition-colors shadow-sm">
+                <a href="https://www.linkedin.com/in/mejatinrajani/" className="p-4 lg:p-6 border border-slate-200 bg-white rounded-sm text-slate-600 hover:text-[#0f172a] transition-colors shadow-sm">
                   <LinkedinIcon />
                 </a>
-                <a href="#" className="p-4 lg:p-6 border border-slate-200 bg-white rounded-sm text-slate-600 hover:text-[#0f172a] transition-colors shadow-sm">
+                <a href="https://github.com/mejatinrajani" className="p-4 lg:p-6 border border-slate-200 bg-white rounded-sm text-slate-600 hover:text-[#0f172a] transition-colors shadow-sm">
                   <GithubIcon />
                 </a>
               </div>
