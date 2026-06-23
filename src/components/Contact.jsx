@@ -35,7 +35,7 @@ const Contact = () => {
           <div className="mt-16 lg:mt-0 relative flex flex-col lg:items-end">
             {/* Giant Background '05' */}
             <div className="absolute bottom-4 left-0 lg:left-auto lg:right-0 text-[15rem] font-black z-0 select-none pointer-events-none leading-none tracking-tighter bg-gradient-to-b from-slate-300/60 from 20% to-transparent bg-clip-text text-transparent">
-              03
+              04
             </div>
             
             <div className="relative z-10 flex flex-col lg:items-end">
@@ -148,7 +148,7 @@ const Contact = () => {
 
               <div className="flex justify-between items-center py-4 border-b border-slate-200">
                 <span className="text-[12px] font-bold text-slate-400 tracking-[0.3em] uppercase">RESPONSE TIME</span>
-                <span className="text-[15px] font-medium text-slate-800">&lt; 24 hours</span>
+                <span className="text-[15px] font-medium text-slate-800">&lt; 4 hours</span>
               </div>
 
               <div className="flex justify-between items-center py-4 border-b border-slate-200">
@@ -170,9 +170,11 @@ const Contact = () => {
 
             {/* Giant Typography */}
             <div className="flex flex-col leading-[0.85] select-none pointer-events-none ">
-              <span className="text-[4rem] sm:text-[5rem] lg:text-[5.5rem] font-black text-slate-200/70 tracking-tighter uppercase ">LET'S</span>
-              <span className="text-[4rem] sm:text-[5rem] lg:text-[5.5rem] font-black text-slate-200/70 tracking-tighter uppercase">BUILD</span>
-              <span className="text-[4rem] sm:text-[5rem] lg:text-[5.5rem] font-black text-slate-200/70 tracking-tighter uppercase">TOGETHER</span>
+              <div className="leading-[0.85] bg-gradient-to-b from-slate-400 via-slate-300/50 to-transparent bg-clip-text text-transparent">
+                <span className="block text-[5rem] sm:text-[5rem] lg:text-[8rem] font-black text-slate-200/70 tracking-tighter uppercase ">LET'S</span>
+                <span className="block text-[5rem] sm:text-[5rem] lg:text-[8rem] font-black text-slate-200/70 tracking-tighter uppercase">BUILD</span>
+                <span className="block text-[5rem] sm:text-[5rem] lg:text-[8rem] font-black text-slate-200/70 tracking-tighter uppercase">TOGETHER</span>
+              </div>
             </div>
 
           </div>
