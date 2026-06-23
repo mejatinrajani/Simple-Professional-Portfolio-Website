@@ -32,10 +32,9 @@ const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     
-    // Append the Web3Forms access key to the payload
     const payload = {
       ...formData,
-      access_key: "59ab3e98-3101-4b06-8ee7-5bd649cc6424",
+      access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
     };
 
     try {
