@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'grained';
+  src: url('./assets/fonts/Grained-Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@theme {
+  --font-grained: 'grained', sans-serif;
+}
