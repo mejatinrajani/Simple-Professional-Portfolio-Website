@@ -16,11 +16,12 @@ const LeetCodeIcon = () => (
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div id='home'
       className="relative min-h-screen overflow-hidden flex flex-col font-sans text-slate-800 selection:bg-slate-800 selection:text-white"
@@ -60,7 +61,7 @@ const Hero = () => {
         <div className="max-w-[1400px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
           {/* Left Column - Text Content */}
-          <div className="flex flex-col items-start gap-6 mt-12 lg:mt-0 md:-ml-8 lg:-ml-16 xl:-ml-24">
+          <div className="flex flex-col items-start gap-6 mt-12 lg:mt-0">
 
             {/* Headings */}
             <div className="flex flex-col mt-2">
@@ -106,7 +107,7 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6 lg:mt-8 z-10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6 lg:mt-8 mb-8 z-10">
               <span className="text-[16px] lg:text-[30px] font-bold text-slate-400 tracking-widest uppercase">
                 CONNECT :
               </span>
@@ -125,11 +126,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column - Image Section (RESTORED EXACT STRUCTURE) */}
-          <div className="relative mx-auto w-full max-w-[380px] mt-16 lg:mt-0 flex justify-end">
+          {/* Right Column - Image Section (HIDDEN ON PHONES) */}
+          <div className="hidden md:flex relative mx-auto w-full max-w-[380px] mt-16 lg:mt-0 justify-end">
             
-            {/* Giant Background 'JR' (Anchored exactly as before!) */}
-            <div className="absolute -top-12 -translate-y-1/2 -right-8 sm:-right-20 lg:-right-96 text-[18rem] sm:text-[24rem] lg:text-[70rem] font-black z-0 select-none pointer-events-none leading-none bg-gradient-to-b from-slate-40/50 from-10% to-slate-300/80 bg-clip-text text-transparent">
+            {/* Giant Background 'JR' */}
+            <div className="absolute -top-14 -translate-y-1/2 -right-8 sm:-right-20 lg:-right-[360px] text-[18rem] sm:text-[24rem] lg:text-[70rem] font-black z-0 select-none pointer-events-none leading-none  bg-gradient-to-b from-slate-40/50 from-10% to-slate-300/80 bg-clip-text text-transparent">
               JR
             </div>
 
