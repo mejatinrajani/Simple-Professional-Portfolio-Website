@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import FloatingActions from './components/FloatingActions';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
+      <FloatingActions />
     </>
   )
 }

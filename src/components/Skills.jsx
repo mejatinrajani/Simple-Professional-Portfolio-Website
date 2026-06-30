@@ -266,7 +266,7 @@ const SkillsGrid = () => {
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(cat.id)}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-sm text-xs font-bold tracking-widest transition-all ${
+                className={`flex items-center gap-2 px-5 py-2.5 text-xs font-bold tracking-widest rounded-sm transition-all ${
                   activeTab === cat.id
                     ? 'bg-[#0f172a] text-white shadow-md'
                     : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
@@ -290,9 +290,9 @@ const SkillsGrid = () => {
             return (
               <div 
                 key={`${skill.name}-${index}`}
-                className="bg-white p-5 rounded-lg flex items-center gap-4 cursor-pointer group transition-all duration-300
+                className="bg-white p-5 flex items-center gap-4 cursor-pointer group transition-all duration-300
                            border-2 border-solid border-slate-100 
-                           hover:border hover:border-[#0f172a] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(15,23,42,0.15)]"
+                           hover:border hover:border-[#0f172a] hover:rounded-xl hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(15,23,42,0.15)]"
               >
                 <div className="bg-slate-50 p-3 rounded-md group-hover:bg-[#0f172a]/10 transition-colors duration-300">
                   <Icon size={26} className="text-slate-600 group-hover:text-[#0f172a] transition-colors duration-300" />

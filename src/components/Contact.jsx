@@ -252,7 +252,7 @@ const Contact = () => {
               <div className="mt-4 flex flex-col items-start gap-6">
                 <button 
                   type="submit" 
-                  className="flex items-center gap-3 bg-transparent border border-[#1a202c] text-[#1a202c] px-6 py-3 text-lg font-bold hover:bg-[#1a202c] hover:text-white transition-colors"
+                  className="flex items-center gap-3 bg-transparent hover:rounded-xl border border-[#1a202c] text-[#1a202c] px-6 py-3 text-lg font-bold hover:bg-[#1a202c] hover:text-white transition-colors"
                 >
                   Send Message
                   <Send size={20} strokeWidth={2.5} />
