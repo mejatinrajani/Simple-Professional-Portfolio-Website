@@ -1,0 +1,105 @@
+{
+  "personal_info": {
+    "name": "Jatin Rajani",
+    "title": "Applied AI & Cloud-Native Full Stack Engineer",
+    "phone": "+91 87913 09542",
+    "email": "mejatinrajani.tech@gmail.com",
+    "github": "github.com/mejatinrajani",
+    "linkedin": "linkedin.com/in/mejatinrajani",
+    "portfolio": "mejatinrajani.vercel.app"
+  },
+
+  "professional_summary": "Cloud-Native Full Stack and Applied AI Developer with hands-on internship experience building production-grade systems across frontend experiences, backend APIs, multimodal deep learning, and Advanced RAG pipelines. Seeking roles in AI/ML or Full Stack Development to contribute to real-world systems from day one.",
+
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science",
+      "institution": "GLA University, Mathura, India",
+      "expected_graduation": "May 2027"
+    }
+  ],
+
+  "professional_experience": [
+    {
+      "title": "Software Engineering Intern",
+      "company": "ShunyaTech",
+      "type": "Remote",
+      "duration": "Jan 2026 - Feb 2026",
+      "description": "Engineered a Hybrid Graph and Vector RAG chatbot from scratch, combining BM25 sparse retrieval with dense vector search, and utilizing hierarchical chunking to process unstructured data into JSON. Achieved 95% retrieval accuracy and 35ms latency by integrating advanced NLP pipelines--including intent detection, query rewriting, and crossencoder reranking."
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "MultiForgeX",
+      "type": "Remote",
+      "duration": "Sep 2025 - Nov 2025",
+      "description": "Optimized an existing platform's overall performance by 30% by enhancing frontend responsiveness, refactoring 5+ core CRUD workflows and slashing authentication latency to less than 200ms. Additionally, crafted an immersive 3D website from scratch using React and Three.js, seamlessly integrating 3+ custom Blender models."
+    }
+  ],
+
+  "technical_projects": [
+    {
+      "name": "NexusMind",
+      "subtitle": "Enterprise Agentic RAG Platform",
+      "technologies": ["Python", "FastAPI", "React", "LangGraph", "Neo4j", "ChromaDB", "AWS Textract"],
+      "description": "Architected a multi-tenant, no-code platform for building custom Hybrid RAG agents with configurable agent personas, system prompts, and isolated knowledge bases per tenant. Designed a multimodal ingestion pipeline that transforms unstructured PDFs, images, and documents into searchable graph and vector knowledge bases, and implemented LangGraph-based orchestration with intelligent retrieval routing, fault-tolerant model fallbacks, and real-time monitoring across 3+ supported LLM providers."
+    },
+    {
+      "name": "MHPCD",
+      "subtitle": "Multimodal Hinglish Predatory Comment Detector",
+      "technologies": ["PyTorch", "Transformers", "FastAPI", "Computer Vision", "NLP"],
+      "description": "Constructed an AI-powered moderation system for context-aware detection of predatory and abusive behavior in Indian social media, building a custom dataset from scratch by scraping 50,000+ Hinglish comments and 15,000+ images. Architected a multimodal fusion pipeline utilizing SigLIP and BGE-M3 encoders with cross-modal attention to jointly analyze images and text, with a FastAPI backend delivering sub-second moderation inference."
+    },
+    {
+      "name": "Chronexis",
+      "subtitle": "Automated Timetable Generation System",
+      "technologies": ["Google OR-Tools", "FastAPI", "React", "TypeScript", "Excel"],
+      "description": "Formulated a constraint-based timetable generation system leveraging CP-SAT, capable of scheduling 5,000+ slots at once, handling 100+ rooms and 100+ faculty members simultaneously, generating large institutional timetables in under 5 minutes and smaller ones in under 2 minutes. Integrated drag-and-drop editing, real-time conflict detection, Excel import/export, and multi-perspective views for students, teachers, and rooms with full history tracking."
+    },
+    {
+      "name": "Astika",
+      "subtitle": "Vedic Astrology Intelligence Platform",
+      "technologies": ["Python", "FastAPI", "React", "TypeScript", "Swiss Ephemeris"],
+      "description": "Orchestrated a full-stack Vedic astrology platform featuring 50+ deterministic engines for high-precision, location based calculations across rashi, nakshatra, transits, dosha and yoga detection, dasha timelines, guna milan, and divisional charts. Delivered structured insights and daily predictions across career, health, personality & relationships. Integrated an intent-aware chatbot for natural language query handling backed by strict rule-based accuracy"
+    }
+  ],
+
+  "technical_skills": {
+    "programming_languages": ["Python", "JavaScript (ES6+)", "TypeScript", "Java"],
+    "ai_machine_learning": ["Multimodal Models", "Transformers", "Deep Learning", "Computer Vision", "NLP", "RAG (Naive, Advanced, Hybrid, Graph, Multimodal, Self-Reflective)", "Generative AI", "LLM Fine-tuning"],
+    "backend_development": ["FastAPI", "Django", "Django REST Framework", "Node.js", "Express.js", "Flask"],
+    "frontend_development": ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Zustand"],
+    "databases": ["PostgreSQL", "MongoDB", "MySQL", "Neo4j", "ChromaDB", "Supabase", "Django ORM"],
+    "cloud_devops": ["AWS", "Docker", "CI/CD", "Vercel", "Render", "Netlify"],
+    "tools_practices": ["Git", "GitHub", "n8n", "Agile", "Postman", "VS Code"]
+  },
+
+  "key_achievements": [
+    "Achieved 95% retrieval accuracy and 35ms latency in RAG chatbot implementation",
+    "Optimized platform performance by 30% and reduced authentication latency to <200ms",
+    "Built multimodal AI system processing 50,000+ Hinglish comments and 15,000+ images",
+    "Created timetable system handling 5,000+ slots, 100+ rooms, 100+ faculty simultaneously",
+    "Designed and deployed multi-tenant enterprise RAG platform with 3+ LLM provider support"
+  ],
+
+  "faq": {
+    "What is your main area of expertise?": "I specialize in Applied AI and Full Stack Development, with particular expertise in RAG pipelines, multimodal AI systems, and cloud-native architecture. My recent work includes building enterprise-grade RAG platforms and AI-powered moderation systems.",
+
+    "What RAG variations have you worked with?": "I've worked with Naive RAG, Advanced RAG, Hybrid RAG (combining BM25 and vector search), Graph-based RAG, Multimodal RAG, and Self-Reflective RAG. I have hands-on experience with hierarchical chunking, intent detection, query rewriting, and crossencoder reranking.",
+
+    "Tell me about your NexusMind project": "NexusMind is a multi-tenant, no-code platform for building custom Hybrid RAG agents. It features configurable agent personas, isolated knowledge bases per tenant, multimodal ingestion (PDFs, images, documents), graph and vector knowledge bases, LangGraph-based orchestration, and support for 3+ LLM providers with fault tolerance.",
+
+    "What's the MHPCD project about?": "MHPCD is a Multimodal Hinglish Predatory Comment Detector - an AI moderation system for Indian social media. It uses a custom dataset of 50,000+ Hinglish comments and 15,000+ images, with SigLIP and BGE-M3 encoders for multimodal analysis, achieving sub-second inference.",
+
+    "Describe your Chronexis project": "Chronexis is an automated timetable generation system using Google OR-Tools CP-SAT. It can handle 5,000+ slots, 100+ rooms, and 100+ faculty simultaneously. Features include drag-and-drop editing, real-time conflict detection, Excel import/export, and generates institutional timetables in under 5 minutes.",
+
+    "What was your experience at ShunyaTech?": "At ShunyaTech, I engineered a Hybrid Graph and Vector RAG chatbot combining BM25 sparse retrieval with dense vector search. I achieved 95% retrieval accuracy and 35ms latency using hierarchical chunking, intent detection, query rewriting, and crossencoder reranking.",
+
+    "What did you do at MultiForgeX?": "At MultiForgeX, I optimized platform performance by 30%, enhanced frontend responsiveness, refactored 5+ core CRUD workflows, and reduced authentication latency to under 200ms. I also built an immersive 3D website using React and Three.js with 3+ custom Blender models.",
+
+    "What's your experience with multimodal AI?": "I have extensive multimodal experience including SigLIP and BGE-M3 encoders, cross-modal attention mechanisms, and fusion pipelines. I've built systems that jointly analyze images and text for AI moderation and detection tasks.",
+
+    "Which cloud platforms have you used?": "I've worked with AWS, Docker containerization, CI/CD pipelines, and deployment on Vercel, Render, and Netlify. I have hands-on experience with cloud-native architecture and DevOps practices.",
+
+    "What LLM frameworks do you know?": "I work with LangGraph for orchestration, have experience with LLM fine-tuning, and support multiple LLM providers. I've implemented fault-tolerant model fallbacks in production systems."
+  }
+}

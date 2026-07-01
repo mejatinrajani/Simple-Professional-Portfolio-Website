@@ -101,17 +101,17 @@ export default function ChatbotModal({ isOpen, onClose }) {
       let botText = response.answer;
 
       // Add sources section if available
-      if (response.sources && response.sources.length > 0) {
-        botText += "\n\n📚 Sources:";
-        response.sources.forEach((source, idx) => {
-          botText += `\n• ${source.section}${source.subsection ? ` - ${source.subsection}` : ''} (Relevance: ${source.relevance_score})`;
-        });
-      }
+      // if (response.sources && response.sources.length > 0) {
+      //   botText += "\n\n📚 Sources:";
+      //   response.sources.forEach((source, idx) => {
+      //     botText += `\n• ${source.section}${source.subsection ? ` - ${source.subsection}` : ''} (Relevance: ${source.relevance_score})`;
+      //   });
+      // }
 
       // Add confidence indicator if low
-      if (response.confidence_score < 0.5) {
-        botText += "\n\n⚠️ Note: This response has lower confidence. Please verify important details.";
-      }
+      // if (response.confidence_score < 0.5) {
+      //   botText += "\n\n⚠️ Note: This response has lower confidence. Please verify important details.";
+      // }
 
       const newBotMsg = {
         id: Date.now() + 1,
