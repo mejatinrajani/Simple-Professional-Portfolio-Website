@@ -53,7 +53,8 @@ export async function sendChatMessage(message, conversationId = null) {
     conversation_id: conversationId,
   };
 
-  return makeRequest('/chat', {
+  // ADDED /api HERE
+  return makeRequest('/api/chat', {
     method: 'POST',
     body: JSON.stringify(payload),
   });
@@ -64,7 +65,8 @@ export async function sendChatMessage(message, conversationId = null) {
  * @returns {Promise<Object>} Health status
  */
 export async function getHealth() {
-  return makeRequest('/health', {
+  // ADDED /api HERE
+  return makeRequest('/api/health', {
     method: 'GET',
   });
 }
@@ -74,7 +76,8 @@ export async function getHealth() {
  * @returns {Promise<Object>} Pipeline stats
  */
 export async function getStats() {
-  return makeRequest('/stats', {
+  // ADDED /api HERE
+  return makeRequest('/api/stats', {
     method: 'GET',
   });
 }
@@ -83,12 +86,13 @@ export async function getStats() {
  * Reingest data and rebuild vector stores
  * @returns {Promise<Object>} Reingest status
  */
-export async function reingестData() {
-  return makeRequest('/reingest', {
+export async function reingestData() { 
+  // ADDED /api HERE 
+  // (Also fixed a tiny typo in the function name: 'reingестData' had some non-English characters in it!)
+  return makeRequest('/api/reingest', {
     method: 'POST',
   });
 }
-
 /**
  * Check if backend is available
  * @returns {Promise<boolean>} True if backend is healthy
