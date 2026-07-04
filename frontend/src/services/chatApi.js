@@ -110,6 +110,6 @@ export default {
   sendChatMessage,
   getHealth,
   getStats,
-  reingестData,
+  reingestData,
   isBackendAvailable,
 };
