@@ -1,17 +1,32 @@
-# React + Vite
+# Professional Portfolio and RAG Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for a professional portfolio website, featuring a React-based frontend and a Python FastAPI backend. The system integrates a custom Retrieval-Augmented Generation (RAG) pipeline to power an intelligent virtual assistant capable of answering queries regarding professional experience, technical skills, and projects.
 
-Currently, two official plugins are available:
+## Architecture Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application is divided into two primary services:
 
+1. **Frontend (React + Vite):** A responsive, optimized user interface providing portfolio details and a dedicated chat interface for the virtual assistant.
+2. **Backend (FastAPI):** A high-performance API serving the RAG pipeline. It utilizes ChromaDB for vector storage and integrates with the Groq API for rapid inference.
 
-## React Compiler
+## Technical Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React, Vite, Tailwind CSS
+* **Backend:** Python, FastAPI, Uvicorn
+* **AI/ML Infrastructure:** 
+  * Groq API (LLM Inference)
+  * ChromaDB (Vector Database)
+  * Sentence Transformers (Embeddings)
+  * Rank-BM25 (Sparse Retrieval)
 
-## Expanding the ESLint configuration
+## Local Development Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+* Node.js (v18 or higher)
+* Python (3.10 recommended)
+* Git
+
+### Frontend Installation
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
