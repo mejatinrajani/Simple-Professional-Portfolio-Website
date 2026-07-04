@@ -35,6 +35,7 @@ cors_origins = [
     "http://localhost:5173",      # Vite dev server
     "http://localhost:3000",       # Alternative dev port
     "http://127.0.0.1:5173",
+    "https://www.jatinrajani.me/",
     "http://127.0.0.1:3000",
 ]
 
