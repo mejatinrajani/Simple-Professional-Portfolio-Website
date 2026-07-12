@@ -1,0 +1,20 @@
+# robots.txt for https://www.jatinrajani.me
+# Author: Jatin Rajani
+
+User-agent: *
+Allow: /
+
+# Prevent crawling of build artifacts (optional)
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /dist/
+
+# Crawl delay (ignored by Google, respected by some bots)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.jatinrajani.me/sitemap.xml
+
+# Host (used by some search engines)
+Host: https://www.jatinrajani.me
