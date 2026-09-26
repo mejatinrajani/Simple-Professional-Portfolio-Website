@@ -30,6 +30,14 @@ const Projects = () => {
       tech: ["Python", "FastAPI", "React", "Swiss Ephemeris"],
       liveLink: "https://www.astika.tech/",
       githubLink: "https://github.com/mejatinrajani/Astika.git"
+    },
+    {
+      id: "05",
+      title: "IP-SAKTI",
+      description: "Orchestrated a 5-node LangGraph evaluation pipeline spanning structured botanical entity extraction, deterministic DMR claim screening, Neo4j regulatory traversal, IMPPAT-based biological intelligence, and jurisdiction-isolated statutory RAG. Integrated Google Patents prior-art discovery, citation/XAI auditing, and Bhashini translation supporting all 22 Scheduled Indian Languages, delivering separate national and international compliance reports from text or voice input and read-aloud capabilities.",
+      tech: ["Python", "LangGraph", "Neo4j", "ChromaDB"],
+      liveLink: "https://ip--sakti.vercel.app/",
+      githubLink: "https://github.com/mejatinrajani/IP-SAKTI2.0.git"
     }
   ];
 
