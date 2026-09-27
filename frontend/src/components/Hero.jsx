@@ -96,7 +96,7 @@ const Hero = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 lg:gap-4 mt-2 z-10 w-full sm:w-auto">
               <a 
-                href="/Jatin_Rajani_Resume.pdf" 
+                href="/Jatin-Rajani-Resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center z-10 gap-3 lg:gap-4 bg-[#0f172a] text-white px-6 py-4 lg:px-8 lg:py-5 rounded-none hover:rounded-xl text-lg lg:text-2xl font-semibold transition-all duration-300 ease-in-out shadow-sm w-full sm:w-auto"
